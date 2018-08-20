@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 export default {
   create(styleHash) {
-    return StyleSheet.create(styleHash);
+    return styleHash;
   },
 
   // Styles is an array of properties returned by `create()`, a POJO, or an
@@ -10,5 +10,5 @@ export default {
   // This function returns an object to be spread onto an element.
   resolve(styles) {
     return { style: styles };
-  },
+  }
 };
